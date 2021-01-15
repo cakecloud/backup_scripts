@@ -1,6 +1,7 @@
 #!/bin/bash
 ENV=/root/.bashrc
 #source /root/.keychain/$HOSTNAME-sh
+#PLEASE CHANGE START IN 70 LINE ( "$DAY" = "342" )  Uznat podrobnee - line 33
 # A Simple Shell Script to Backup Red Hat / CentOS / Fedora / Debian / Ubuntu Apache Webserver and SQL Database
 # Path to backup directories
 #DIRS=""
