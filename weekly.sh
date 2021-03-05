@@ -67,7 +67,7 @@ $LOGGER "$0: *** ${DOMAIN} ${BKDIR} Backup started @ $(date) ***"
 rm -rf ${SNAPSHOT_FILE}
 
 #If it's Sunday - we delete the initial metadata file and archives
-if [ "$DAY" = "4" ]; then
+if [ $DAY = "4" ]; then
  NUM="0"
  rm -rf ${SNAPSHOT_FILE_0}
  rm -rf ${BACKUP}/${DOMAIN}*
@@ -89,7 +89,7 @@ $TAR  --exclude-from=${EXCLUDE_CONF} --listed-incremental=${SNAPSHOT_FILE} -zcvf
  
 
 #If it's Sunday, create an initial copy of the metadata
-if [ "$DAY" = "4" ]; then 
+if [ $DAY = "4" ]; then 
  cp ${SNAPSHOT_FILE} ${SNAPSHOT_FILE_0}
 fi
 
